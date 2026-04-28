@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics - Global Media Hub</title>
+    <meta name="description" content="In-depth political analysis, international relations, and policy updates.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Primary Header (Non-sticky on this page) -->
+    <header class="site-header static-header">
+        <div class="header-container">
+            <div class="logo"><a href="index.html">Global Media Hub</a></div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item has-dropdown">
+                        <a href="sports.html">Sports</a>
+                        <div class="dropdown">
+                            <a href="#">Premier League</a>
+                            <a href="#">Transfer News</a>
+                            <a href="#">Analytics</a>
+                            <a href="#">Other Sports</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="finance.html">Finance</a>
+                        <div class="dropdown">
+                            <a href="#">Markets</a>
+                            <a href="#">Personal Finance</a>
+                            <a href="#">Global Trends</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="politics.html">Politics</a>
+                        <div class="dropdown">
+                            <a href="#">Local</a>
+                            <a href="#">International</a>
+                            <a href="#">Policy Updates</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="relationships.html">Relationships</a>
+                        <div class="dropdown">
+                            <a href="#">Lifestyle</a>
+                            <a href="#">Advice</a>
+                            <a href="#">Community Stories</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search news...">
+                <button>&#128269;</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEO Breadcrumbs -->
+    <nav class="breadcrumbs container" aria-label="breadcrumb">
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">Politics</span></li>
+        </ol>
+    </nav>
+
+    <!-- Politics Sub-Header (Sticky) -->
+    <nav class="politics-subheader">
+        <div class="container subheader-container">
+            <div class="politics-logo">POLITICS</div>
+            <ul class="politics-nav-list">
+                <li><a href="#local">Local</a></li>
+                <li><a href="#international">International</a></li>
+                <li><a href="#policy">Policy Updates</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Breaking Alert Ticker (Pulse) -->
+    <div class="breaking-alert-bar">
+        <div class="container breaking-alert-content">
+            <span class="pulse-icon"></span>
+            <strong>BREAKING:</strong> <span>Historic International Climate Summit Reaches Final Agreement Over Emissions Targets</span>
+            <a href="/politics/international/climate-summit-2026" class="alert-link">Read Full Coverage &rarr;</a>
+        </div>
+    </div>
+
+    <main class="main-content politics-main">
+        
+        <!-- The Grid (Journalistic Neutrality) -->
+        <section class="container politics-grid">
+            
+            <!-- Hero / International Story -->
+            <article class="politics-hero" id="international">
+                <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80" alt="Diplomats at a summit">
+                <div class="politics-hero-body">
+                    <span class="category-tag-neutral">International Relations</span>
+                    <h1>Global Summit Concludes With Sweeping Security Pacts</h1>
+                    <p class="hero-excerpt">Delegates from over 40 nations have signed a landmark security and economic cooperation agreement aimed at stabilizing international trade routes and reinforcing defense commitments across key strategic regions.</p>
+                    <div class="article-meta">By Foreign Desk • Published 3 hours ago</div>
+                </div>
+            </article>
+
+            <!-- Local News & Filter Sidebar -->
+            <aside class="politics-local-sidebar" id="local">
+                <div class="sidebar-header">
+                    <h2>Local Coverage</h2>
+                    <div class="geo-filter">
+                        <label for="region-select" class="sr-only">Filter by Region</label>
+                        <select id="region-select">
+                            <option value="all">All Regions</option>
+                            <option value="north-america">North America</option>
+                            <option value="europe">Europe</option>
+                            <option value="asia">Asia-Pacific</option>
+                            <option value="africa">Africa</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="local-news-feed" id="localNewsFeed">
+                    <!-- Feed dynamically filtered by JS -->
+                    <article class="local-story" data-region="north-america">
+                        <h4><a href="/politics/local/new-zoning-laws">City Council Passes Controversial Zoning Laws</a></h4>
+                        <span class="local-meta">North America • 1 hr ago</span>
+                    </article>
+                    <article class="local-story" data-region="europe">
+                        <h4><a href="/politics/local/eu-parliament-election">Election Results: Shifts in the European Parliament</a></h4>
+                        <span class="local-meta">Europe • 4 hrs ago</span>
+                    </article>
+                    <article class="local-story" data-region="asia">
+                        <h4><a href="/politics/local/tokyo-transport-bill">Major Transport Infrastructure Bill Approved</a></h4>
+                        <span class="local-meta">Asia-Pacific • 6 hrs ago</span>
+                    </article>
+                    <article class="local-story" data-region="africa">
+                        <h4><a href="/politics/local/nairobi-tech-summit">Tech Hub Subsidies Announced for Startups</a></h4>
+                        <span class="local-meta">Africa • 8 hrs ago</span>
+                    </article>
+                    <article class="local-story" data-region="north-america">
+                        <h4><a href="/politics/local/mayor-press-conference">Mayor Defends New Public Transit Budget Allocation</a></h4>
+                        <span class="local-meta">North America • 12 hrs ago</span>
+                    </article>
+                </div>
+            </aside>
+        </section>
+
+        <!-- Policy Updates (TL;DR Strategy) -->
+        <section class="container policy-updates-section" id="policy">
+            <div class="section-header-politics">
+                <h2>Policy Updates <span class="tldr-badge">TL;DR</span></h2>
+                <p class="section-subtitle">Complex legislation broken down into what you need to know.</p>
+            </div>
+            
+            <div class="policy-cards-grid">
+                
+                <article class="policy-card">
+                    <div class="policy-card-header">
+                        <span class="policy-category economy">Economic</span>
+                        <h3>The Digital Services Tax Act 2026</h3>
+                    </div>
+                    <div class="policy-card-body">
+                        <ul class="tldr-list">
+                            <li><strong>What it is:</strong> A 3% levy on the revenues of major tech corporations operating digital marketplaces.</li>
+                            <li><strong>Who it affects:</strong> Tech companies with global revenues exceeding $500M. Consumers may see slight price adjustments.</li>
+                            <li><strong>When:</strong> Takes effect starting Q3 2026.</li>
+                        </ul>
+                    </div>
+                    <div class="policy-card-footer">
+                        <a href="/politics/policy/digital-services-tax" class="read-full-btn">Read Full Analysis</a>
+                    </div>
+                </article>
+
+                <article class="policy-card">
+                    <div class="policy-card-header">
+                        <span class="policy-category environment">Environment</span>
+                        <h3>Clean Energy Mandate Update</h3>
+                    </div>
+                    <div class="policy-card-body">
+                        <ul class="tldr-list">
+                            <li><strong>What it is:</strong> Increased subsidies for solar panel installations and a phased reduction of fossil fuel allowances.</li>
+                            <li><strong>Who it affects:</strong> Residential homeowners qualify for 20% rebates. Energy corporations face stricter caps.</li>
+                            <li><strong>When:</strong> Rebate applications open next month.</li>
+                        </ul>
+                    </div>
+                    <div class="policy-card-footer">
+                        <a href="/politics/policy/clean-energy-mandate" class="read-full-btn">Read Full Analysis</a>
+                    </div>
+                </article>
+
+                <article class="policy-card">
+                    <div class="policy-card-header">
+                        <span class="policy-category civic">Civic</span>
+                        <h3>Data Privacy Protection Bill</h3>
+                    </div>
+                    <div class="policy-card-body">
+                        <ul class="tldr-list">
+                            <li><strong>What it is:</strong> A comprehensive framework requiring explicit opt-in for algorithmic data profiling.</li>
+                            <li><strong>Who it affects:</strong> All internet users gain enhanced 'Right to Delete' powers. Social platforms must re-audit policies.</li>
+                            <li><strong>When:</strong> Phased implementation over the next 18 months.</li>
+                        </ul>
+                    </div>
+                    <div class="policy-card-footer">
+                        <a href="/politics/policy/data-privacy-bill" class="read-full-btn">Read Full Analysis</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Global Media Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="politics.js"></script>
+</body>
+</html>

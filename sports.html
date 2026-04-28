@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports - Global Media Hub</title>
+    <meta name="description" content="Latest Sports Breaking News, Transfers, Rumors and Videos.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Primary Header (Non-sticky on this page) -->
+    <header class="site-header static-header">
+        <div class="header-container">
+            <div class="logo"><a href="index.html">Global Media Hub</a></div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item has-dropdown">
+                        <a href="sports.html">Sports</a>
+                        <div class="dropdown">
+                            <a href="#">Premier League</a>
+                            <a href="#">Transfer News</a>
+                            <a href="#">Analytics</a>
+                            <a href="#">Other Sports</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="finance.html">Finance</a>
+                        <div class="dropdown">
+                            <a href="#">Markets</a>
+                            <a href="#">Personal Finance</a>
+                            <a href="#">Global Trends</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="politics.html">Politics</a>
+                        <div class="dropdown">
+                            <a href="#">Local</a>
+                            <a href="#">International</a>
+                            <a href="#">Policy Updates</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="relationships.html">Relationships</a>
+                        <div class="dropdown">
+                            <a href="#">Lifestyle</a>
+                            <a href="#">Advice</a>
+                            <a href="#">Community Stories</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search news...">
+                <button>&#128269;</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sports Sub-Header (Sticky) -->
+    <nav class="sports-subheader">
+        <div class="container subheader-container">
+            <div class="sports-logo">SPORT</div>
+            <ul class="sports-nav-list">
+                <li><a href="#news">News</a></li>
+                <li><a href="#watch">Watch</a></li>
+                <li><a href="#transfers">Transfers</a></li>
+                <li><a href="#rumors">Rumors</a></li>
+                <li class="mega-dropdown-trigger">
+                    <a href="#teams" aria-haspopup="true" aria-expanded="false">Teams &#9662;</a>
+                    <!-- Mega Menu Dropdown -->
+                    <div class="teams-mega-menu" aria-label="Teams Dropdown">
+                        <div class="league-column">
+                            <h3>Premier League</h3>
+                            <ul>
+                                <li><a href="/sport/premier-league/arsenal"><img src="https://crests.football-data.org/57.svg" alt="" width="20"> Arsenal</a></li>
+                                <li><a href="/sport/premier-league/chelsea"><img src="https://crests.football-data.org/61.png" alt="" width="20"> Chelsea</a></li>
+                                <li><a href="/sport/premier-league/liverpool"><img src="https://crests.football-data.org/64.png" alt="" width="20"> Liverpool</a></li>
+                                <li><a href="/sport/premier-league/man-city"><img src="https://crests.football-data.org/65.png" alt="" width="20"> Man City</a></li>
+                                <li><a href="/sport/premier-league/man-united"><img src="https://crests.football-data.org/66.png" alt="" width="20"> Man United</a></li>
+                            </ul>
+                        </div>
+                        <div class="league-column">
+                            <h3>La Liga</h3>
+                            <ul>
+                                <li><a href="/sport/la-liga/barcelona"><img src="https://crests.football-data.org/81.svg" alt="" width="20"> Barcelona</a></li>
+                                <li><a href="/sport/la-liga/real-madrid"><img src="https://crests.football-data.org/86.png" alt="" width="20"> Real Madrid</a></li>
+                                <li><a href="/sport/la-liga/atletico"><img src="https://crests.football-data.org/78.svg" alt="" width="20"> Atlético Madrid</a></li>
+                            </ul>
+                        </div>
+                        <div class="league-column">
+                            <h3>Serie A</h3>
+                            <ul>
+                                <li><a href="/sport/serie-a/juventus"><img src="https://crests.football-data.org/109.png" alt="" width="20"> Juventus</a></li>
+                                <li><a href="/sport/serie-a/ac-milan"><img src="https://crests.football-data.org/98.svg" alt="" width="20"> AC Milan</a></li>
+                                <li><a href="/sport/serie-a/inter"><img src="https://crests.football-data.org/108.png" alt="" width="20"> Inter Milan</a></li>
+                            </ul>
+                        </div>
+                        <div class="league-column">
+                            <h3>Bundesliga</h3>
+                            <ul>
+                                <li><a href="/sport/bundesliga/bayern"><img src="https://crests.football-data.org/5.svg" alt="" width="20"> Bayern Munich</a></li>
+                                <li><a href="/sport/bundesliga/dortmund"><img src="https://crests.football-data.org/4.png" alt="" width="20"> B. Dortmund</a></li>
+                                <li><a href="/sport/bundesliga/leverkusen"><img src="https://crests.football-data.org/3.png" alt="" width="20"> B. Leverkusen</a></li>
+                            </ul>
+                        </div>
+                        <div class="league-column">
+                            <h3>Ligue 1</h3>
+                            <ul>
+                                <li><a href="/sport/ligue-1/psg"><img src="https://crests.football-data.org/524.png" alt="" width="20"> PSG</a></li>
+                                <li><a href="/sport/ligue-1/marseille"><img src="https://crests.football-data.org/516.png" alt="" width="20"> Marseille</a></li>
+                                <li><a href="/sport/ligue-1/lyon"><img src="https://crests.football-data.org/523.svg" alt="" width="20"> Lyon</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content sports-main">
+        <!-- Hero Section (Dynamic Grid) -->
+        <section class="container hero-dynamic-grid" id="news">
+            <article class="hero-primary">
+                <img src="https://images.unsplash.com/photo-1518605368461-1e1e1141703e?auto=format&fit=crop&w=1200&q=80" alt="Football players celebrating">
+                <div class="hero-primary-content">
+                    <span class="live-badge">BREAKING</span>
+                    <h1>CHAMPIONS LEAGUE: THE FINAL SHOWDOWN</h1>
+                    <p>Exclusive insight into the preparations and tactics ahead of the biggest match of the year.</p>
+                </div>
+            </article>
+            <div class="hero-secondary-grid">
+                <article class="hero-secondary">
+                    <img src="https://images.unsplash.com/photo-1550106568-9d41d1a938c5?auto=format&fit=crop&w=600&q=80" alt="Formula 1">
+                    <div class="hero-sec-content">
+                        <h2>Verstappen Clinches Pole Position in Monaco</h2>
+                    </div>
+                </article>
+                <article class="hero-secondary">
+                    <img src="https://images.unsplash.com/photo-1593341646782-e0b495cff86d?auto=format&fit=crop&w=600&q=80" alt="Tennis">
+                    <div class="hero-sec-content">
+                        <h2>Alcaraz Advances to Grand Slam Semi-Finals</h2>
+                    </div>
+                </article>
+                <article class="hero-secondary">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbb192a53a?auto=format&fit=crop&w=600&q=80" alt="Basketball">
+                    <div class="hero-sec-content">
+                        <h2>Lakers Trade Rumors: Who's on the Move?</h2>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Watch Section -->
+        <section class="container watch-section" id="watch">
+            <div class="section-header">
+                <h2>Watch</h2>
+                <div class="carousel-controls">
+                    <button id="prevBtn" class="carousel-btn" aria-label="Previous Videos">&larr;</button>
+                    <button id="nextBtn" class="carousel-btn" aria-label="Next Videos">&rarr;</button>
+                </div>
+            </div>
+            <div class="video-carousel" id="videoCarousel">
+                <article class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-meta">
+                        <h3>Match Highlights: Incredible Comeback!</h3>
+                        <span class="views">1.2M views • 2 hours ago</span>
+                    </div>
+                </article>
+                <article class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-meta">
+                        <h3>Manager Interview: "We deserved the win"</h3>
+                        <span class="views">450K views • 5 hours ago</span>
+                    </div>
+                </article>
+                <article class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/V-_O7nl0Ii0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-meta">
+                        <h3>Top 10 Goals of the Month</h3>
+                        <span class="views">2.1M views • 1 day ago</span>
+                    </div>
+                </article>
+                <article class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-meta">
+                        <h3>Transfer Show: Live Updates</h3>
+                        <span class="views">89K views • Live now</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Global Media Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="sports.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance - Global Media Hub</title>
+    <meta name="description" content="Real-time Markets, Personal Finance Guides, and Global Trade Trends.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Primary Header (Non-sticky on this page) -->
+    <header class="site-header static-header">
+        <div class="header-container">
+            <div class="logo"><a href="index.html">Global Media Hub</a></div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item has-dropdown">
+                        <a href="sports.html">Sports</a>
+                        <div class="dropdown">
+                            <a href="#">Premier League</a>
+                            <a href="#">Transfer News</a>
+                            <a href="#">Analytics</a>
+                            <a href="#">Other Sports</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="finance.html">Finance</a>
+                        <div class="dropdown">
+                            <a href="#">Markets</a>
+                            <a href="#">Personal Finance</a>
+                            <a href="#">Global Trends</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="politics.html">Politics</a>
+                        <div class="dropdown">
+                            <a href="#">Local</a>
+                            <a href="#">International</a>
+                            <a href="#">Policy Updates</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="relationships.html">Relationships</a>
+                        <div class="dropdown">
+                            <a href="#">Lifestyle</a>
+                            <a href="#">Advice</a>
+                            <a href="#">Community Stories</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search news...">
+                <button>&#128269;</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Finance Sub-Header (Sticky) -->
+    <nav class="finance-subheader">
+        <div class="container subheader-container">
+            <div class="finance-logo">FINANCE</div>
+            <ul class="finance-nav-list">
+                <li><a href="#markets">Market</a></li>
+                <li><a href="#personal">Personal Finance</a></li>
+                <li><a href="#global">Global Trends</a></li>
+                <li><a href="#business">Business</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Market Ticker -->
+    <div class="market-ticker-wrapper">
+        <div class="market-ticker-content" id="live-ticker">
+            <span class="ticker-item">Loading live market data...</span>
+        </div>
+    </div>
+
+    <main class="main-content finance-main">
+        <!-- Top Story / Hero -->
+        <section class="container finance-hero" id="markets">
+            <div class="finance-hero-content">
+                <span class="category-tag">Markets</span>
+                <h1>Global Indices Surge as Inflation Pressures Ease</h1>
+                <p>Tech giants lead the charge while traditional banking sectors see cautious optimism ahead of the Q3 reports.</p>
+                <div class="hero-meta">By Financial Desk • 2 hours ago</div>
+            </div>
+            <div class="finance-hero-image">
+                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80" alt="Stock Market Board">
+            </div>
+        </section>
+
+        <!-- Personal Finance Section -->
+        <section class="container personal-finance-section" id="personal">
+            <div class="section-header-finance">
+                <h2>Personal Finance</h2>
+                <a href="/finance/personal-finance" class="view-all">View All Guides &rarr;</a>
+            </div>
+            <div class="pf-grid">
+                <a href="/finance/personal-finance/budgeting-2026" class="pf-card">
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=400&q=80" alt="Budgeting">
+                    <div class="pf-card-content">
+                        <h3>The 50/30/20 Rule: Budgeting in 2026</h3>
+                        <p>A modern approach to dividing your income effectively.</p>
+                    </div>
+                </a>
+                <a href="/finance/personal-finance/crypto-tax" class="pf-card">
+                    <img src="https://images.unsplash.com/photo-1621504450181-5d356f61d307?auto=format&fit=crop&w=400&q=80" alt="Crypto Tax">
+                    <div class="pf-card-content">
+                        <h3>Navigating Crypto Taxes</h3>
+                        <p>What you need to know before filing this year.</p>
+                    </div>
+                </a>
+                <a href="/finance/personal-finance/first-home" class="pf-card">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=400&q=80" alt="Real Estate">
+                    <div class="pf-card-content">
+                        <h3>First-Time Homebuyer Guide</h3>
+                        <p>Strategies for tackling high interest rates.</p>
+                    </div>
+                </a>
+                <a href="/finance/personal-finance/retirement" class="pf-card">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=400&q=80" alt="Retirement">
+                    <div class="pf-card-content">
+                        <h3>Maximizing Your Pension Contributions</h3>
+                        <p>Ensure you are taking full advantage of employer matches.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Global Trends Heatmap Infographic -->
+        <section class="container global-trends-section" id="global">
+            <div class="section-header-finance">
+                <h2>Global Trends: UK - West Africa Trade Corridor</h2>
+            </div>
+            <div class="infographic-container">
+                <div class="info-sidebar">
+                    <div class="data-card">
+                        <h4>Total Trade Volume (2025)</h4>
+                        <div class="data-value positive">£4.2 Billion <span class="trend">&uarr; 12%</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h4>Top UK Export</h4>
+                        <div class="data-value">Machinery & Tech</div>
+                        <p>£1.1B exported to Nigeria & Ghana.</p>
+                    </div>
+                    <div class="data-card">
+                        <h4>Top West African Export</h4>
+                        <div class="data-value">Agricultural & Minerals</div>
+                        <p>£850M imported by the UK.</p>
+                    </div>
+                </div>
+                <div class="info-main-chart">
+                    <!-- CSS Data visualization representation -->
+                    <h3 class="chart-title">Trade Growth Trajectory (Last 5 Years)</h3>
+                    <div class="bar-chart">
+                        <div class="bar-group">
+                            <span class="year">2022</span>
+                            <div class="bar" style="height: 40%;">£2.8B</div>
+                        </div>
+                        <div class="bar-group">
+                            <span class="year">2023</span>
+                            <div class="bar" style="height: 55%;">£3.2B</div>
+                        </div>
+                        <div class="bar-group">
+                            <span class="year">2024</span>
+                            <div class="bar" style="height: 65%;">£3.7B</div>
+                        </div>
+                        <div class="bar-group">
+                            <span class="year">2025</span>
+                            <div class="bar highlight" style="height: 85%;">£4.2B</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Expert Corner (Cross-pollination) -->
+        <section class="container expert-corner-section" id="business">
+            <div class="expert-content">
+                <span class="category-tag overlap-tag">Finance x Politics</span>
+                <h2>How the Latest Trade Tariffs Affect Your Wallet</h2>
+                <p>Our political correspondents and financial analysts break down the real-world impact of the new international trade policies on consumer goods, electronics, and daily groceries.</p>
+                <a href="/politics-finance/trade-tariffs-impact" class="btn-primary">Read the Full Analysis</a>
+            </div>
+            <div class="expert-image">
+                <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=600&q=80" alt="Coins and Graph">
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-module">
+            <div class="container newsletter-container">
+                <div class="newsletter-text">
+                    <h2>Stay Ahead of the Market</h2>
+                    <p>Get our daily financial breakdown and exclusive investment insights delivered straight to your inbox.</p>
+                </div>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Global Media Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="finance.js"></script>
+</body>
+</html>

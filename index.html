@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Media Hub - News, Sports, Finance, Politics & Relationships</title>
+    <meta name="description" content="Global Media Hub brings you the latest breaking news in Sports, Finance, Politics, and Relationships.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Breaking News Ticker -->
+    <div class="breaking-ticker">
+        <div class="ticker-label">BREAKING</div>
+        <div class="ticker-content">
+            <marquee behavior="scroll" direction="left" id="breaking-marquee">
+                <span>Global Markets rally as tech stocks surge.</span>
+                <span class="ticker-separator">|</span>
+                <span>Champions League final date announced.</span>
+                <span class="ticker-separator">|</span>
+                <span>New policies revealed for international trade.</span>
+            </marquee>
+        </div>
+    </div>
+
+    <!-- Mega Menu -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">Global Media Hub</div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item has-dropdown">
+                        <a href="sports.html">Sports</a>
+                        <div class="dropdown">
+                            <a href="#">Premier League</a>
+                            <a href="#">Transfer News</a>
+                            <a href="#">Analytics</a>
+                            <a href="#">Other Sports</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="finance.html">Finance</a>
+                        <div class="dropdown">
+                            <a href="#">Markets</a>
+                            <a href="#">Personal Finance</a>
+                            <a href="#">Global Trends</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="politics.html">Politics</a>
+                        <div class="dropdown">
+                            <a href="#">Local</a>
+                            <a href="#">International</a>
+                            <a href="#">Policy Updates</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="relationships.html">Relationships</a>
+                        <div class="dropdown">
+                            <a href="#">Lifestyle</a>
+                            <a href="#">Advice</a>
+                            <a href="#">Community Stories</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search news...">
+                <button>&#128269;</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Football Live Ticker / League Table -->
+        <section class="live-sports-banner">
+            <div class="container">
+                <div class="live-indicator"><span class="pulse"></span>LIVE</div>
+                <div id="football-scores" class="scores-container">
+                    Loading live scores...
+                </div>
+            </div>
+        </section>
+
+        <!-- Homepage Hierarchy -->
+        <div class="container homepage-grid">
+            <!-- Top Story (Hero) -->
+            <article class="hero-story">
+                <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=80" alt="Football Match" loading="lazy">
+                <div class="hero-content">
+                    <span class="category-tag tag-sports">Sports</span>
+                    <h1>City Secures Historic Victory in Final Minutes</h1>
+                    <p>A thrilling encounter ends with a late goal that shakes up the entire league standings.</p>
+                    <time datetime="2023-10-25">2 Hours Ago</time>
+                </div>
+            </article>
+
+            <!-- Secondary Slots -->
+            <div class="secondary-stories">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80" alt="Stock Market" loading="lazy">
+                    <div class="card-content">
+                        <span class="category-tag tag-finance">Finance</span>
+                        <h2>Global Markets Hit Record Highs Amidst Tech Boom</h2>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=600&q=80" alt="Political Debate" loading="lazy">
+                    <div class="card-content">
+                        <span class="category-tag tag-politics">Politics</span>
+                        <h2>Summit Concludes With Major Policy Shifts on Trade</h2>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=600&q=80" alt="People Talking" loading="lazy">
+                    <div class="card-content">
+                        <span class="category-tag tag-relationships">Relationships</span>
+                        <h2>The Art of Conversation in the Digital Age</h2>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Premium Ad Slot -->
+        <div class="container">
+            <div class="premium-ad-slot">
+                <span>Advertisement</span>
+                <div class="ad-content">Premium Brand Sponsorship</div>
+            </div>
+        </div>
+
+        <!-- Category Grids -->
+        <div class="container deep-dives">
+            
+            <!-- Sports Grid -->
+            <section class="category-section sports-section" id="sports">
+                <div class="section-header">
+                    <h2>Sports Focus</h2>
+                    <a href="#" class="view-all">All Sports &rarr;</a>
+                </div>
+                <div class="sports-grid">
+                    <div class="main-sports-article">
+                        <img src="https://images.unsplash.com/photo-1508344928928-7165b67de128?auto=format&fit=crop&w=800&q=80" alt="Transfer News" loading="lazy">
+                        <h3>Latest Transfer Rumors: Who's Moving Where?</h3>
+                    </div>
+                    <div class="sports-sidebar">
+                        <h4>Latest Transfers</h4>
+                        <ul class="transfer-list">
+                            <li><strong>J. Bellingham</strong> to Real Madrid - €103M</li>
+                            <li><strong>D. Rice</strong> to Arsenal - €116M</li>
+                            <li><strong>M. Mount</strong> to Man United - €64M</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Finance & Politics Layout -->
+            <section class="category-section news-section">
+                <div class="news-columns">
+                    <div class="finance-column" id="finance">
+                        <div class="section-header">
+                            <h2>Finance & Markets</h2>
+                        </div>
+                        <article class="news-item">
+                            <h3>Interest Rates Maintained Following Central Bank Meeting</h3>
+                            <p>Analysts had predicted a hike, but the committee opted for stability amid inflation signs slowing down...</p>
+                        </article>
+                        <article class="news-item">
+                            <h3>Cryptocurrency Regulations Tighten Globally</h3>
+                            <p>New frameworks aim to protect investors while fostering innovation in the digital asset space...</p>
+                        </article>
+                    </div>
+                    <div class="politics-column" id="politics">
+                        <div class="section-header">
+                            <h2>Politics</h2>
+                        </div>
+                        <article class="news-item">
+                            <h3>Local Elections See Unprecedented Turnout</h3>
+                            <p>Voters flocked to the polls in record numbers this weekend, signaling a shift in civic engagement...</p>
+                        </article>
+                        <article class="news-item">
+                            <h3>International Climate Accords Enter New Phase</h3>
+                            <p>Leaders agree on accelerated timelines for carbon reduction targets during the latest Geneva summit...</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Relationships Magazine Layout -->
+            <section class="category-section relationships-section" id="relationships">
+                <div class="section-header">
+                    <h2>Relationships & Lifestyle</h2>
+                </div>
+                <div class="magazine-grid">
+                    <article class="mag-item">
+                        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=600&q=80" alt="Couple" loading="lazy">
+                        <h3>Building Trust After a Disagreement</h3>
+                        <div class="social-share">
+                            <button>Share</button> <button>Like</button>
+                        </div>
+                    </article>
+                    <article class="mag-item">
+                        <img src="https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&w=600&q=80" alt="Friends" loading="lazy">
+                        <h3>Navigating Friendships in Your 30s</h3>
+                        <div class="social-share">
+                            <button>Share</button> <button>Like</button>
+                        </div>
+                    </article>
+                    <div class="most-read">
+                        <h4>Most Read</h4>
+                        <ol>
+                            <li>5 Signs You've Found "The One"</li>
+                            <li>How to Plan the Perfect Weekend Getaway</li>
+                            <li>Effective Communication in the Workplace</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Global Media Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
