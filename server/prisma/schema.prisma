@@ -1,0 +1,115 @@
+// This is your Prisma schema file.
+// Learn more: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// =============================================
+//  ENUMS
+// =============================================
+
+enum Segment {
+  SPORT
+  FINANCE
+  POLITICS
+  RELATIONSHIP
+}
+
+enum Role {
+  ADMIN
+  EDITOR
+  VIEWER
+}
+
+// =============================================
+//  MODELS
+// =============================================
+
+model User {
+  id        String    @id @default(uuid())
+  email     String    @unique
+  password  String
+  name      String
+  role      Role      @default(VIEWER)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  articles  Article[]
+
+  @@map("users")
+}
+
+model Article {
+  id          String   @id @default(uuid())
+  title       String
+  slug        String   @unique
+  excerpt     String?
+  content     String
+  segment     Segment
+  category    String
+  imageUrl    String?
+  author      String
+  published   Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Sport-specific fields
+  league      String?
+  teamSlug    String?
+
+  // Finance-specific fields
+  ticker      String?
+
+  // Politics-specific fields
+  region      String?
+  policyArea  String?
+
+  // Relationship-specific
+  isUserStory Boolean @default(false)
+
+  authorId    String?
+  authorRef   User?   @relation(fields: [authorId], references: [id])
+
+  @@index([segment])
+  @@index([slug])
+  @@index([category])
+  @@map("articles")
+}
+
+model CommunitySubmission {
+  id          String   @id @default(uuid())
+  name        String
+  email       String
+  title       String
+  story       String
+  approved    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+
+  @@map("community_submissions")
+}
+
+model Poll {
+  id        String       @id @default(uuid())
+  question  String
+  segment   Segment
+  active    Boolean      @default(true)
+  createdAt DateTime     @default(now())
+  options   PollOption[]
+
+  @@map("polls")
+}
+
+model PollOption {
+  id      String @id @default(uuid())
+  label   String
+  votes   Int    @default(0)
+  pollId  String
+  poll    Poll   @relation(fields: [pollId], references: [id], onDelete: Cascade)
+
+  @@map("poll_options")
+}
